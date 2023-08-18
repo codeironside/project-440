@@ -1,4 +1,4 @@
-```markdown
+
 # 📗 Table of Contents <a name="readme-top"></a>
 
 - [📗 Table of Contents](#-table-of-contents-)
@@ -120,17 +120,20 @@ Receive personalized notifications to stay informed about the latest updates. Ca
 
 > Make sure you have the following applications installed to run the project:
 
-- A modern web browser (e.g., [Google Chrome](https://www.google.com/chrome/), [Edge](https://www.microsoft.com/en-us/edge?r=1), [Firefox](https://www.mozilla.org/en-US/exp/firefox/new/))
-- [Node.js](https://nodejs.org/en/download/) LTS version
-- [Git](https://git-scm.com/downloads)
+- A modern web browser (e.g., [![Google Chrome](https://img.shields.io/badge/Google_Chrome-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.google.com/chrome/), [![Microsoft Edge](https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&logo=microsoft-edge&logoColor=white)](https://www.microsoft.com/en-us/edge)
+, [![Mozilla Firefox](https://img.shields.io/badge/Mozilla_Firefox-FF7139?style=for-the-badge&logo=firefox-browser&logoColor=white)](https://www.mozilla.org/en-US/firefox/new/)
+
+- [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/) LTS version
+- [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/downloads)
 
 ### Setup
 
 Clone this repository to your desired directory:
 
 ```sh
-git clone https://github.com/YourUsername/Campulse
-cd Campulse
+
+    git clone https://github.com/YourUsername/Campulse
+    cd Campulse
 ```
 
 ### Install
@@ -138,7 +141,7 @@ cd Campulse
 Install project dependencies:
 
 ```sh
-npm install
+    npm install
 ```
 
 ### Usage
@@ -197,6 +200,9 @@ Meet the minds behind Campulse:
 
 👤 **Fleming**
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/the-fleming-airunugba)
+
+👤 **Meshinoye Ridwan Adekunle**
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ridwanmeshinoye)
 
 👤 **Yahuza Sani Hudu**
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yahuxa)
