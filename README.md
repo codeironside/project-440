@@ -132,8 +132,8 @@ Clone this repository to your desired directory:
 
 ```sh
 
-    git clone https://github.com/YourUsername/Campulse
-    cd Campulse
+    git clone https://github.com/codeironside/project-440.git
+    cd project-440
 ```
 
 ### Install
@@ -200,6 +200,7 @@ Meet the minds behind Campulse:
 
 👤 **Fleming**
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/the-fleming-airunugba)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:flemingairunigba@gmail.com/)
 
 👤 **Meshinoye Ridwan Adekunle**
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ridwanmeshinoye)
@@ -211,7 +212,7 @@ Meet the minds behind Campulse:
 
 
 👤 **Eunice Adams Idakwa**
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/u_adams?igshid=MmlzYwVINDQ5Yg==)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/u_uadams?igshid=MmlzYWVINDQ5Yg==)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eunice-adams-96a835228)
 
 
