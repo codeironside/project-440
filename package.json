@@ -1,37 +1,46 @@
 {
-  "name": "project-440",
+  "name": "proklic-pos",
   "version": "1.0.0",
-  "description": "# project-440",
+  "description": "a restaurant management system",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server":"nodemon server/server.js"
+    "server": "nodemon server/server.js",
+    "client-install": "cd client && npm install",
+    "start": "cd client && npm start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codeironside/project-440.git"
+    "url": "git+https://github.com/SPARKBYTE-INTEGRATED/PROKLIC-POS.git"
   },
-  "keywords": [
-    "project-440"
-  ],
-  "author": "0luwatobi A Jolaosho",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codeironside/project-440/issues"
+    "url": "https://github.com/SPARKBYTE-INTEGRATED/PROKLIC-POS/issues"
   },
-  "homepage": "https://github.com/codeironside/project-440#readme",
+  "homepage": "https://github.com/SPARKBYTE-INTEGRATED/PROKLIC-POS#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "buffer": "^6.0.3",
     "colors": "^1.4.0",
-    "dotenv": "^16.3.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
-    "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.4.1",
+    "express-session": "^1.17.3",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.3",
     "morgan": "^1.10.0",
-    "nodemailer": "^6.9.4",
-    "nodemon": "^3.0.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.22",
     "os": "^0.1.2",
     "path": "^0.12.7",
-    "winston": "^3.10.0"
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "zlib": "^1.0.5"
   }
 }

@@ -35,6 +35,7 @@ Welcome to Campulse, the University Blog platform! Campulse provides a space for
   <summary>Languages</summary>
   <ul>
     <li><a href="https://www.javascript.com/">Javascript</a></li>
+    <li><a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap</a></li>
   </ul>
 </details>
 
@@ -60,10 +61,42 @@ Welcome to Campulse, the University Blog platform! Campulse provides a space for
 
 > Campulse offers a range of features designed to enhance the user experience:
 
-- **Engaging Articles:** Explore a diverse collection of articles contributed by both students and faculty members.
-- **User-Friendly Interface:** Navigate the platform effortlessly and enjoy a seamless reading experience.
-- **Author Profiles:** Learn more about the authors behind the articles, including their academic backgrounds and interests.
-- **Responsive Design:** Access Campulse from various devices and enjoy a consistent experience.
+
+Campulse offers a suite of key features tailored to elevate your academic journey and enrich your reading experience:
+
+- **Engaging Articles:** 📚
+
+Immerse yourself in a dynamic and diverse collection of articles, thoughtfully contributed by both students and esteemed faculty members. From cutting-edge research breakthroughs to insightful personal narratives, Campulse's articles foster a vibrant exchange of ideas and perspectives within the academic community. Explore topics that resonate with your curiosity and delve into a world of knowledge and discovery.
+
+- **intuitive User-Friendly Interface:**🌐
+
+Experience the pleasure of effortless navigation through Campulse's intuitive interface. Designed with user convenience in mind, the platform empowers you to seamlessly discover, read, and engage with articles that align with your interests. The user-friendly layout enhances your interaction with academic content, ensuring an enjoyable and productive browsing experience.
+
+- **Author Profiles:** 📝
+
+Uncover the minds behind the words. Every article on Campulse comes with an associated author profile, allowing you to delve deeper into the backgrounds, expertise, and passions of the contributors. Gain insights into their academic journeys, research pursuits, and accomplishments. This connection between readers and authors enhances the context of each article, fostering a sense of community and collaboration.
+
+- **responsive designs**📱💻
+
+Access Campulse's rich repository of articles from a diverse range of devices. Whether you're on a desktop, tablet, or smartphone, our platform's responsive design ensures a seamless and visually consistent experience. Enjoy the flexibility to engage with articles, explore author profiles, and join academic conversations on the go, without compromising on readability or aesthetics.
+
+- **Personlized Bookmarks** 📌
+
+Create a curated reading list tailored to your preferences. Campulse enables you to bookmark articles that resonate with you, facilitating easy access to your favorite content. Build your personalized repository of knowledge, making it convenient to revisit and reference articles that have made an impact on your academic journey.
+
+- **Thoughtful Discussions** 💬
+
+Engage in meaningful conversations sparked by thought-provoking articles. Campulse encourages vibrant discussions through threaded comments, allowing readers, authors, and experts to exchange insights, pose questions, and challenge ideas. Contribute to an ecosystem of intellectual discourse that amplifies the value of each article.
+
+- **Tags and categories:** 🏷️
+
+Effortlessly explore a wide array of topics using Campulse's tagging and categorization system. Browse articles grouped by relevant themes, enabling you to discover content aligned with your specific interests. Whether you're exploring a niche subject or seeking a broader perspective, the tagging system enhances your content discovery journey.
+
+- **Stay Updated with NOtifcatios** 📬
+
+Receive personalized notifications to stay informed about the latest updates. Campulse keeps you in the loop about new articles, responses to your comments, and updates to bookmarked content. This feature ensures you're always connected to the evolving academic discourse within the Campulse community.
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,10 +146,10 @@ npm install
 To run the project, execute the following command:
 
 ```sh
-npm start
+npm  run server
 ```
 
-- After running `npm start`, access the Campulse platform at [http://localhost:3000/](http://localhost:3000/) in your browser.
+- After running `npm run server`, access the Campulse platform at [http://localhost:3040/](http://localhost:3040/) in your browser.
 - For more information, please visit the [Node.js website](https://nodejs.org/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -125,27 +158,56 @@ npm start
 
 Meet the minds behind Campulse:
 
-👤 **Omotunde Daniel**
+👤 **Elijah Osimeneh**
 
-[GitHub](https://github.com/)
-[LinkedIn](https://www.linkedin.com/in/)
-[Twitter](https://twitter.com/)
-
-[Gmail](mailto:)
+[GitHub](https://github.com/Gananyo)
+[LinkedIn](https://www.linkedin.com/in/osimene-elijah-8a59a21b2)
+[Twitter](https://twitter.com/Official_El3f0S?s=09)
+[Gmail](mailto:osimeneelijah@gmail.com)
 
 👤 **Oluwatobi Ayoola Jolaosho**
 
 [GitHub](https://github.com/codeironside)
 [Twitter](https://twitter.com/fury25423)
-[LinkedIn](https://www.linkedin.com/in/)
-[Gmail](mailto:)
+[LinkedIn](https://www.linkedin.com/in/jolaosho-oluwatobi-a3b78319a)
+[Gmail](mailto:fury25423@gmail.com)
 
-👤 **Asomba Emmanuel Chinonso**
+👤 **toye omolara**
 
-[GitHub](https://github.com/codeironside)
-[Twitter](https://twitter.com/)
+[GitHub](https://github.com/toyeomalara)
+[Twitter](https://twitter.com/omolara_13)
+[LinkedIn](https://www.linkedin.com/in/toye-omlara-anuoluwapo-66bab6194)
+[Gmail](mailto:toyeomolara@gmail.com)
+
+👤 **Asabi Kofoworola**
+
+[Medium](https://medium.com/@Atiredperson)
+[LinkedIn](https://www.linkedin.com/in/kofoworola-asabi-144810250)
+[Gmail](mailto:asabikofoworola@gmail.com)
+
+👤 **Odafe**
+[Twitter](https://twitter.com/dafedesign)
+[Gmail](mailto:odafe.dm@gmail.com)
+
+👤 **Peace Oluruntoba**
+[GitHub](https://github.com/PeaceOloruntoba)
+[Twitter](https://twitter.com/PeaceEdgeTech)
 [LinkedIn](https://www.linkedin.com/in/)
-[Gmail](mailto:)
+[Gmail](mailto:peaceoloruntoba22@gmail.com/)
+
+👤 **Fleming**
+[LinkedIn](https://www.linkedin.com/in/the-fleming-airunugba)
+
+👤 **Yahuza Sani Hudu**
+[GitHub](https://github.com/yahuxa)
+[LinkedIn](https://www.linkedin.com/in/yahuza-sani-hudu-21a264248)
+[Gmail](mailto:yahuzashudu@gmail.com/)
+
+
+👤 **Eunice Adams Idakwa**
+[Eunice](https://instagram.com/u_adams?igshid=MmlzYwVINDQ5Yg==)
+[LinkedIn](https://www.linkedin.com/in/eunice-adams-96a835228)
+
 
 ## 🔭 Future Features <a name="future-features"></a>
 
