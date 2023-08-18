@@ -146,7 +146,7 @@ npm install
 To run the project, execute the following command:
 
 ```sh
-npm  run server
+npm run server
 ```
 
 - After running `npm run server`, access the Campulse platform at [http://localhost:3040/](http://localhost:3040/) in your browser.
@@ -160,53 +160,53 @@ Meet the minds behind Campulse:
 
 👤 **Elijah Osimeneh**
 
-[GitHub](https://github.com/Gananyo)
-[LinkedIn](https://www.linkedin.com/in/osimene-elijah-8a59a21b2)
-[Twitter](https://twitter.com/Official_El3f0S?s=09)
-[Gmail](mailto:osimeneelijah@gmail.com)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Gananyo)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/osimene-elijah-8a59a21b2)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/Official_El3f0S?s=09)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:osimeneelijah@gmail.com)
 
 👤 **Oluwatobi Ayoola Jolaosho**
 
-[GitHub](https://github.com/codeironside)
-[Twitter](https://twitter.com/fury25423)
-[LinkedIn](https://www.linkedin.com/in/jolaosho-oluwatobi-a3b78319a)
-[Gmail](mailto:fury25423@gmail.com)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/codeironside)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/fury25423)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jolaosho-oluwatobi-a3b78319a)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:fury25423@gmail.com)
 
 👤 **toye omolara**
 
-[GitHub](https://github.com/toyeomalara)
-[Twitter](https://twitter.com/omolara_13)
-[LinkedIn](https://www.linkedin.com/in/toye-omlara-anuoluwapo-66bab6194)
-[Gmail](mailto:toyeomolara@gmail.com)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/toyeomalara)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/omolara_13)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/toye-omlara-anuoluwapo-66bab6194)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:toyeomolara@gmail.com)
 
 👤 **Asabi Kofoworola**
 
-[Medium](https://medium.com/@Atiredperson)
-[LinkedIn](https://www.linkedin.com/in/kofoworola-asabi-144810250)
-[Gmail](mailto:asabikofoworola@gmail.com)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@Atiredperson)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kofoworola-asabi-144810250)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:asabikofoworola@gmail.com)
 
 👤 **Odafe**
-[Twitter](https://twitter.com/dafedesign)
-[Gmail](mailto:odafe.dm@gmail.com)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/dafedesign)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:odafe.dm@gmail.com)
 
 👤 **Peace Oluruntoba**
-[GitHub](https://github.com/PeaceOloruntoba)
-[Twitter](https://twitter.com/PeaceEdgeTech)
-[LinkedIn](https://www.linkedin.com/in/)
-[Gmail](mailto:peaceoloruntoba22@gmail.com/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/PeaceOloruntoba)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/PeaceEdgeTech)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:peaceoloruntoba22@gmail.com/)
 
 👤 **Fleming**
-[LinkedIn](https://www.linkedin.com/in/the-fleming-airunugba)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/the-fleming-airunugba)
 
 👤 **Yahuza Sani Hudu**
-[GitHub](https://github.com/yahuxa)
-[LinkedIn](https://www.linkedin.com/in/yahuza-sani-hudu-21a264248)
-[Gmail](mailto:yahuzashudu@gmail.com/)
+[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yahuxa)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yahuza-sani-hudu-21a264248)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yahuzashudu@gmail.com/)
 
 
 👤 **Eunice Adams Idakwa**
-[Eunice](https://instagram.com/u_adams?igshid=MmlzYwVINDQ5Yg==)
-[LinkedIn](https://www.linkedin.com/in/eunice-adams-96a835228)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/u_adams?igshid=MmlzYwVINDQ5Yg==)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eunice-adams-96a835228)
 
 
 ## 🔭 Future Features <a name="future-features"></a>
