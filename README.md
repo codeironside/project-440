@@ -257,5 +257,5 @@ If you like Campulse, show your support by giving it a ⭐️!
 
 ## 📝 License <a name="license"></a>
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the [![MIT License](https://img.shields.io/badge/License-MIT-3D9970?style=for-the-badge)](https://opensource.org/licenses/MIT)
 ```
