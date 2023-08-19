@@ -12,6 +12,8 @@ const sessions = require("./middleware/sessions");
 // const GridFsStorage = require("multer-gridfs-storage");
 const { errorHandler } = require("./middleware/errormiddleware");
 const cors = require("cors");
+const corsOption = require("./config/corsOption")
+const credentials = require("./middleware/credentials")
 
 
 
@@ -19,11 +21,11 @@ const cors = require("cors");
 // const helmet = require("./middleware/helmet");
 const app = express();
 //port  number
-const port = process.env.port || 3024;
+const port = process.env.port || 3040;
 
 const morgan = require("morgan");
 const logger = require("./utils/logger");
-const employeelogger = require("./utils/employeelogger");
+// const employeelogger = require("./utils/employeelogger");
 
 //logger
 app.use(morgan("tiny", { stream: logger.stream }));
@@ -31,10 +33,11 @@ app.use(morgan("tiny", { stream: logger.stream }));
 
 connectDB();
 
+//credentials 
+app.use(credentials)
+
 //CORS
-app.use(cors({
-  origin: "*" // specify the exact origin that is allowed access
-}));
+app.use(cors(corsOption));
 
 //... mz
 //middlewares
@@ -50,7 +53,7 @@ app.use(express.urlencoded({ extended: false }));
 // app.use(methodOverride("_method"));
 
 // app.use("/employee", require("./routes/employee"));
-// // app.use("/shops", require("./routes/shops"));
+// app.use("/shops", require("./routes/shops"));
 // app.use("/menu", require("./routes/menu"));
 // app.use("/branch", require("./routes/branch"));
 // app.use("/role", require("./routes/roles"));

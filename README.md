@@ -188,7 +188,7 @@ Meet the minds behind Campulse:
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kofoworola-asabi-144810250)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:asabikofoworola@gmail.com)
 
-👤 **Odafe**
+👤 **Odafe Megida**
 [![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/dafedesign)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:odafe.dm@gmail.com)
 
@@ -215,7 +215,8 @@ Meet the minds behind Campulse:
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/u_udams/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eunice-adams-96a835228)
 
-
+👤 **Halima**
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/just_haleema/)
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Stay excited for upcoming features on Campulse:
