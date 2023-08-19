@@ -227,6 +227,7 @@ const forgottenpassword = asyncHandler(async (req, res) => {
     console.log("Secret:", secret.base32);
     console.log("Current Time:", currentTime);
     console.log("Generated OTP:", otp);
+    res.status(202).json({otp:otp})
   }
 });
 
