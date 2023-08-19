@@ -217,6 +217,21 @@ Meet the minds behind Campulse:
 
 👤 **Halima**
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/just__haleema/)
+
+👤 **Tumi**
+[![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@tumini.n.u)
+
+👤 **King Creed**
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/user/@kingcreed8175)
+
+
+
+👤 **Boluwatife Bejide**
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/inboluwatife-bejide-a894881a0)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/_theboluwatife_)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ayomiposibejide@gmail.com/)
+
+
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Stay excited for upcoming features on Campulse:

@@ -52,7 +52,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // app.use(methodOverride("_method"));
 
-// app.use("/employee", require("./routes/employee"));
+app.use("/users", require("./router/users/users"));
 // app.use("/shops", require("./routes/shops"));
 // app.use("/menu", require("./routes/menu"));
 // app.use("/branch", require("./routes/branch"));

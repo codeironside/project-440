@@ -1,19 +1,19 @@
-// const express =require("express")
-// const {register,home, login} = require("../controller/user")
-// const router= express.Router()
+const express =require("express")
+const {register,home, login} = require("../../controller/users/users")
+const router= express.Router()
 
-// //register link
+//register link
 
-// router.route("/register").post(register)
+router.route("/register").post(register)
 
-// //home link
+//home link
 
-// router.route("").get(home)
+router.route("").get(home)
 
-// //login route
+//login route
 
-// router.route("/login").post(login)
+router.route("/login").post(login)
 
 
 
-// module.exports=router
+module.exports=router
