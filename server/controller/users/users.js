@@ -1,9 +1,10 @@
-const bcrypt= require("bcryptjs")
-const nodemailer= require("nodemailer")
+const bcrypt = require("bcryptjs");
+const nodemailer = require("nodemailer");
+const speakeasy = require("speakeasy");
 const USER = require("../../model/users/user");
 const asyncHandler = require("express-async-handler");
-const userlogger= require("../../utils/userlogger")
-const jwt= require("jsonwebtoken")
+const userlogger = require("../../utils/userlogger");
+const jwt = require("jsonwebtoken");
 
 //home page
 
@@ -18,7 +19,6 @@ const home = asyncHandler(async (req, res) => {
 //desc login users
 //access public
 const login = asyncHandler(async (req, res) => {
-  
   const { email, password } = req.body;
 
   const id = await USER.findOne({ email: email });
@@ -42,40 +42,34 @@ const login = asyncHandler(async (req, res) => {
         );
       }
     }
-
-    
-  }else{
+  } else {
     throw new Error("user not found");
   }
 });
-
-
-
-
 
 //@route POST/users/register
 //desc register users
 //access public
 const register = asyncHandler(async (req, res) => {
-  const { firstName, middlename, surname, email, password,phoneNumber } = req.body;
+  const { firstName, middlename, surname, email, password, phoneNumber } =
+    req.body;
 
-  const check = await USER.findOne({email:email})
-  if(check){
-    throw new Error("user exist")
+  const check = await USER.findOne({ email: email });
+  if (check) {
+    throw new Error("user exist");
   }
   const salt = await bcrypt.genSalt(10);
-  const hashedpassword = await bcrypt.hash(password, salt)
-  ;
+  const hashedpassword = await bcrypt.hash(password, salt);
   const user = await USER.create({
     firstName,
     middlename,
     surname,
     email,
     password: hashedpassword,
-    phoneNumber
+    phoneNumber,
   });
 
-  if(user){
+  if (user) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -83,7 +77,7 @@ const register = asyncHandler(async (req, res) => {
         pass: process.env.password,
       },
     });
-  
+
     const html = `
     <!DOCTYPE html>
     <html lang="en">
@@ -163,14 +157,14 @@ const register = asyncHandler(async (req, res) => {
     
     
   `;
-  
+
     const mailOptions = {
       from: process.env.email,
       to: email,
       subject: "Welcome to Campulse",
       html: html,
     };
-  
+
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         res.status(400);
@@ -180,25 +174,18 @@ const register = asyncHandler(async (req, res) => {
         console.log("Email sent: " + info.response);
         userlogger.info(
           `Email sent to ${email}:${req.session.id}:250 - ${res.statusMessage}  - ${req.originalUrl} - ${req.method} - ${req.ip}-${info.response}`
-        )
-      
+        );
       }
       res.status(202).json({
-        firstname:firstName,
-        middleName:middlename,
-  
-      })
+        firstname: firstName,
+        middleName: middlename,
+      });
       userlogger.info(
         `${email} account created ${res.statusCode} - ${res.statusMessage} - ${req.originalUrl} - ${req.method} - ${req.ip} `
       );
     });
-  
-
   }
-
-
 });
-
 
 //@route GET/users/logout
 //desc logout users
@@ -206,14 +193,73 @@ const register = asyncHandler(async (req, res) => {
 const logout = asyncHandler(async (req, res) => {
   req.session.destroy();
 });
+
+const forgottenpassword = asyncHandler(async (req, res) => {
+  const { email } = req.body;
+  const findemail = USER.findOne({ email: email });
+
+  if (findemail) {
+    // Generate a secret
+    const secret = speakeasy.generateSecret({ length: 16 }); // Using 16 characters for 8 digits
+
+    // Get the current time in seconds
+    const currentTime = Math.floor(Date.now() / 1000);
+    await USER.findOneAndUpdate({ email: email }, { secret: secret.base32 }, { new: true })
+    .then(updatedUser => {
+      if (!updatedUser) {
+        console.log('User not found.');
+        return;
+      }
+      
+      console.log('User secret updated:', updatedUser);
+    })
+    .catch(err => {
+      console.error('Error updating user:', err);
+    });
+    // Generate the OTP with a 30-second duration
+    const otp = speakeasy.totp({
+      secret: secret.base32,
+      encoding: "base32",
+      digits: 8,
+      window: 30, // Set the time step to 30 seconds
+    });
+
+    console.log("Secret:", secret.base32);
+    console.log("Current Time:", currentTime);
+    console.log("Generated OTP:", otp);
+  }
+});
+
+const verifyOtp = asyncHandler(async (req, res) => {
+  const { email } = req.body;
+  const currentTime = Math.floor(Date.now() / 1000);
+
+  const otpValidationResult = speakeasy.totp.verify({
+    secret,
+    encoding: "base32",
+    token: userEnteredOTP,
+    digits: 8,
+    window: 1, // Number of time steps the OTP can deviate
+  });
+
+  if (otpValidationResult) {
+    if (currentTime + 30 >= Math.floor(Date.now() / 1000)) {
+      return "OTP is valid and has not expired.";
+    } else {
+      return "OTP is valid but has expired.";
+    }
+  } else {
+    return "OTP is invalid!";
+  }
+});
 const generateToken = (id) => {
   return jwt.sign(
     {
-      id
+      id,
     },
     process.env.JWT_SECRET,
     { expiresIn: "12h" }
   );
 };
 
-module.exports = { register, login, home };
+module.exports = { register, login, home,forgottenpassword };

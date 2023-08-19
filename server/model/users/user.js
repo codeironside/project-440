@@ -32,12 +32,12 @@ const USER = mongoose.Schema(
     password: {
       type: String,
     },
-    // phoneNumber: {
-    //   type: String,
-    //   required: [true, "please include phone number"],
-    // },
+    phoneNumber: {
+      type: String,
+      required: [true, "please include phone number"],
+    },
 
-    proofOfPayment: {
+    secret: {
       type: String,
     },
     sessionStorage: {

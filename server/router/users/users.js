@@ -1,5 +1,5 @@
 const express =require("express")
-const {register,home, login} = require("../../controller/users/users")
+const {register,home, login, forgottenpassword} = require("../../controller/users/users")
 const router= express.Router()
 
 //register link
@@ -14,6 +14,7 @@ router.route("").get(home)
 
 router.route("/login").post(login)
 
-
+//forgotten password
+router.route("/forgottenpassword").post(forgottenpassword)
 
 module.exports=router
