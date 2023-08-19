@@ -216,7 +216,7 @@ Meet the minds behind Campulse:
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eunice-adams-96a835228)
 
 👤 **Halima**
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/just_haleema/)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/just__haleema/)
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Stay excited for upcoming features on Campulse:
