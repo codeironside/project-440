@@ -89,13 +89,15 @@ const register = asyncHandler(async (req, res) => {
       <style>
         /* Custom styles */
         .email-container {
-          width: 600px;
+          width: 500px;
           margin: 0 auto;
-          background-color: #007bff;
+           background-color: #063455;
+          border: 2px solid  #063455;
+          border-radius: 5px;
         }
         .email-header {
-          background-color: #007bff;
-          color: #fff;
+          /* background-color: #007bff; */
+          color:  #063455;
           padding: 20px;
         }
         .email-body {
@@ -103,12 +105,16 @@ const register = asyncHandler(async (req, res) => {
           padding: 20px;
         }
         .email-footer {
-          background-color: #007bff;
-          color: #fff;
+          /* background-color: #007bff; */
+          color: #000;
           padding: 20px;
         }
+      
         img {
-          width: 100%;
+
+            width: 150px;
+            height: 100px;
+            box-shadow: 0 4px 8px 0 rgba(209, 198, 198, 0.5), 0 6px 20px 0 rgba(240, 240, 241, 0.19);
         }
         .demo-icon {
           width: 100%;
@@ -119,7 +125,7 @@ const register = asyncHandler(async (req, res) => {
           width: 50px;
           height: 50px;
           border-radius: 50%;
-          background-color: #007bff;
+          /* background-color: #007bff; */
           color: #fff;
           text-align: center;
           font-size: 20px;
@@ -129,33 +135,34 @@ const register = asyncHandler(async (req, res) => {
       </style>
     </head>
     <body>
-      <div class="email-container">
-        <div class="email-header">
-          <h1>Welcome to Campulse</h1>
-          <div class="creative-icon">🎉</div>
-        </div>
-        <div class="email-body">
-          <p>Hi ${firstName},</p>
-          <p>We're so excited to have you join our blog+vlog community!</p>
-          <p>We hope you enjoy our content and find it helpful.</p>
-          <p>Here are a few things you can do to get started:</p>
-          <ul>
-            <li>Browse our blog posts and watch our videos.</li>
-            <li>Leave comments and interact with other users.</li>
-            <li>Subscribe to our newsletter to stay up-to-date on the latest content.</li>
-          </ul>
-          <p>We're always looking for new ways to improve our blog+vlog, so please don't hesitate to give us feedback.</p>
-          <p>Thanks for joining us!</p>
-        </div>
-        <div class="email-footer">
-          <p>Sincerely,</p>
-          <p>Campulse</p>
-        </div>
+      <div class=" row email-container p-2 mt-3">
+            <div class="row email-header">
+            <img src="https://res.cloudinary.com/code-blooded/image/upload/v1692903564/Property_tael_leedc5.png" />
+
+            <!--            <h5 class="justify-content-center text-align-center align-items-center">Welcome to Campulse</h5>
+            <div class="creative-icon">🎉</div> -->
+            </div>
+            <div class="email-body ">
+                <p><b>Hi ${firstName},</b></p>
+                <p><b>We're so excited to have you join our blog+vlog community!</b></p>
+                <p>We hope you enjoy our content and find it helpful.</p>
+                <p>Here are a few things you can do to get started:</p>
+                <ul>
+                    <li><b>Browse our blog posts and watch our videos.</b></li>
+                    <li><b>Leave comments and interact with other users.</b></li>
+                    <li><b>Subscribe to our newsletter to stay up-to-date on the latest content.</b></li>
+                </ul>
+                <p>We're always looking for new ways to improve our blog+vlog, so please don't hesitate to give us feedback.</p>
+                <p><b>Thanks for joining us!</b></p>
+            </div>
+            <div class="email-footer">
+                <p style="color:#FEBC80;"><b>Sincerely,</b></p>
+                <h6 style="color:#FEBC80;">Campulse</h6>
+                <a href=""  style="color:#FEBC80;">login</a>
+            </div>
       </div>
     </body>
-    </html>
-    
-    
+    </html> 
   `;
 
     const mailOptions = {
