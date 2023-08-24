@@ -137,7 +137,7 @@ const register = asyncHandler(async (req, res) => {
     <body>
       <div class=" row email-container p-2 mt-3">
             <div class="row email-header">
-            <img src="https://res.cloudinary.com/code-blooded/image/upload/v1692903564/Property_tael_leedc5.png" />
+            <img src="https://res.cloudinary.com/code-blooded/image/upload/v1692906400/Property_cream_spm4og.png" />
 
             <!--            <h5 class="justify-content-center text-align-center align-items-center">Welcome to Campulse</h5>
             <div class="creative-icon">🎉</div> -->
