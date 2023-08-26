@@ -1,0 +1,11 @@
+Once you pull this, you'll first off need to run the following command
+
+"npm install"
+The tailwindcss is managed by the node package manager, also I thought to use the Tailwindcss CDN but it'll only cause extra cache as the whole tailwind library will be fetched making the browser demand more memory usage and it will be slower on some browser while some browser doesn't allow so much cache which means everytime they reload or visit the website they burn off data fetching information, so to fight this and make the browsing experience on our app faster, we decide to use the tailwind cli, which takes a style input and rebuild it to produce the desired output which means we are only fetching the styles we used and not some junk of files ans cache, lesser cache, lesser memmory usage, speed and browsing experience optimised. Fixed
+in production the program should go smoothly but in developement you need to setup your env as usual
+After installing run the following command to make development live
+"npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+This ensures the css is active, now you can run the html and see both styles
+the --watch is added so that as development is going it watches for changes or increase in style and do the needful to make it work.
+
+Godspeed.

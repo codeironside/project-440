@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Assignment 1</title>
+        <link rel="stylesheet" href="output.css">
+        <script src="https://kit.fontawesome.com/b709b6ab05.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-light fuul">
+                <div class="container-fluid">
+                  <a class="navbar-brand">
+                    <img src="../images/Logo.png" height="35" />
+                </a>
+                  <form class="d-flex input-group w-auto">
+                    <input
+                      type="search"
+                      class="form-control rounded"
+                      placeholder="Search"
+                      aria-label="Search"
+                      aria-describedby="search-addon"
+                    />
+                    <!-- <span class="input-group-text border-0" id="search-addon">
+                      <i class="fas fa-search"></i>
+                    </span> -->
+                    <button type="button" class="btn"  style="background-color: #063455; color:#FEBC80;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@writepost">Write a post</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5"  id="exampleModalLabel">Write a post</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                    <div class="modal-body">
+                                        <form class="row g-2">
+                                            <div class="mb-3">
+                                            <input type="name" class="form-control" placeholder="Your full name" id="name">
+                                            </div><br>
+
+                                            <div class="mb-2">
+                                            <input type="Title" class="form-control" placeholder="Title of your Post" id="Title">
+                                            </div><br>
+
+                                            <div class="mb-3">
+                                            <input class="form-control" type="file" id="formFileMultiple" placeholder="Upload image">
+                                            </div><br>
+                                        
+                                            <div class="mb-3">
+                                            <select id="category" class="form-select">
+                                                <option selected >Select Category</option>
+                                                <option>Music</option>
+                                                <option value="">Poem</option>
+                                                <option value="">Religion</option>
+                                                <option value="">Education</option>
+                                                <option value="">Gossip</option>
+                                                <option value="">AFIT</option>
+                                            </select>
+                                            </div><br>
+                                        
+                                            <div class="mb-3">
+                                                <textarea class="form-control" id="message-text" placeholder="What do you want to talk about?" rows="5"></textarea>
+                                            </div>
+                                        
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="submit" class="btn btn-secondary" style="color:#FEBC80">Post</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary">Subscribe</button>
+                  </form>
+                </div>
+            </nav>
+            <div class="row text-white px-2 py-3 " style="background-color: #063455; min-height: 200px;">
+                
+                <div class="row row-cols-1 row-cols-sm-2 p-5">
+                    <div class="col">
+                        <h1 class="py-3"> Education Sector in Nigeria Faces Challenges Amidst COVID-19 Pandemic</h1>  
+                    </div>
+
+                    <div class="col">
+                       <!-- <a href="#" class="btn"><img class="h-50 w-50" src="../images/target-3.png" alt="image"></a> -->
+                        <h5 class="">Cameron William.</h5>
+                        <p class="text-muted">student.</p>     
+                        <p class="small " style="color: white;">January 1, 2023</div> 
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="container">
+
+                    <div class="row row-cols-1 row-cols-sm-2 p-5 g-5">
+                        <div class="col">
+                            <img class="h-50 w-50" src="../images/dalmatian-spots.png" alt="image"> 
+                            <h5 class="py-1">Lorem ipsum dolor sit amet.</h5>
+                            <p class="py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem esse facilis, voluptates distinctio labore sit nemo aperiam repellendus.</p>
+                               
+                        </div>
+
+                        <div class="col">
+                            <img class="h-50 w-50" src="../images/confetti-doodles.png" alt="image"> 
+                            <h5 class="py-1">Lorem ipsum dolor sit amet.</h5>
+                            <p class="py-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem esse facilis, voluptates distinctio labore sit nemo aperiam repellendus.</p>
+
+                        </div>
+                        
+                    </div>
+                  
+
+
+            </div>   
+            <footer class="row mt-4 pb-0 pt-4" style="background-color: #063455;"> <p class="row text-white justify-content-center text-align-center"> &copy; Campulse</p></footer> 
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    </body>
+</html>
