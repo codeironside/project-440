@@ -1,0 +1,403 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: visible;
+    background-color:#febc80;
+    font-family: sans-serif;
+}
+.navigation{
+    display: flex;
+    height: 8vh;
+    align-items: center;
+}
+button{
+    text-align: center;
+    color: #febc80;
+    font-family: 600;
+}
+.logo{
+    margin-left: 4%;
+}
+.logo > img{
+    filter: hue-rotate(50deg) brightness(12%) contrast(100%) saturate(700%);
+    width: 5vw;
+    height: 8vh;
+}
+.WritePost{
+    background-color: #043354;
+    margin-left: 40%;
+    height: 60%;
+    border-radius: 4px;
+    width: 7%;
+}
+ #search{
+    margin-left: 5%;
+    height: 4vh;
+    width: 23rem;
+    border-radius: 7px;
+}
+.navigation > input::placeholder{
+    padding: 30px;
+}
+i{
+    font-size: 60px;
+    position: absolute;
+    padding: 25px;
+    color:rgba(0, 0, 0, 0.484);
+    margin-left: 13%; 
+}
+.container{
+    height: 30vh;
+    background-color:#320e3b ;
+    color: #10aedb;
+    display: flex;
+}
+.education{
+    width: 50vw;
+    font-size: 60px;
+    margin-left: 30%;
+}
+.studentDetails{
+    width: 100%;
+    height: 30%;
+    margin-top: 9%;
+    margin-left: 16%;
+    text-decoration: none;
+    display: grid;
+}
+.studentDetails .student{
+    height: 7vh;
+    display: flex;
+}
+.studentDetails .student > img{
+    width: 10%;
+    height: 3vw;
+    border-radius: 6px;
+}
+h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 2%;
+}
+h2 > a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    color: blue;
+}
+.main{
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.readDetails{
+    display: grid;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+.readDetailsDiv{
+    display: flex;
+}
+.readDetailsDiv .eduButton{
+    background-color: #a0d0f2;
+    font-weight: 700;
+    color: #10aedb;
+    border:hidden;
+    border-radius: 6px;
+    height: 3vh;
+    width: 7vw;
+}
+.readTime{
+    margin-left: 1%;
+}
+.mainContent{
+    margin-top: 2%;
+}
+.mainContent .covidText{
+    margin-top: 3%;
+    font-size: 20px;
+}
+.mainContent > img{
+    border-radius: 8px;
+    width: 80%;
+    height: 36%;
+}
+.categories{
+    margin-top: 2%;
+}
+table th{
+    font-size: 20px;
+
+}
+.catItems{
+    height: 6vh;
+    display: flex;
+    padding: 10px;
+    font-weight: 600;
+}
+.icon{
+    height: 1vh;
+    border: thin;
+}
+.icon > img{
+    margin-right: 4%;
+    filter: sepia(100%) hue-rotate(190deg) saturate(900%);
+    background-color: #98cffa;
+    width: 2vw;
+    height: 2vh;
+}
+.footer{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.subscribeInfo{
+    height:50% ;
+    width: 40%;
+    margin-left: 4%;
+}
+.newsletter{
+    height: 100%;
+}
+.subscribeNewsletter{
+    font-size: 55px;
+    font-weight: bold;
+    color: darkblue;
+}
+.subscribeInfoText{
+    margin-top: 2%;
+    color: rgb(79, 77, 77);
+    font-size: 20px;
+}
+.subscribeInfo .subscribeDetails{
+    margin-top: 5%;
+    display: flex;
+}
+.subscribeInput{
+    border-style: ridge;
+    height: 5vh;
+    width: 20rem;
+    border-radius: 3px;
+}
+.subscribeInfo input::placeholder{
+    padding: 20px;
+}
+.subscribeButton{
+    width: 15%;
+    color: #febc80;
+    background-color: #063455;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.subscribeimg > img{
+    width: 40vw;
+    height:35vh; 
+}
+
+@media screen and (max-width: 600px){
+    
+    body{
+        background-color:#febc80;
+        font-family: sans-serif;
+    }
+    .navigation{
+            display: flex;
+        height: 8vh;
+        align-items: center;
+    }
+    button{
+        background-color: #063455;
+        text-align: center;
+        color: #febc80;
+        font-family: 600;
+    }
+    
+    .logo{
+        margin-left: 4%;
+    }
+    .logo > img{
+        width: 14vw;
+        height: 5vh;
+    }
+    .WritePost{
+            margin-left: 12%;
+        height: 60%;
+        border-radius: 4px;
+        width: 14%;
+    }
+    #search{
+        margin-left: 7%;
+        height: 4vh;
+        width: 10rem;
+        border-radius: 6px;
+    }
+    i{
+        position: absolute;
+        padding: 20px;
+        color:#10aedb;
+        margin-left: 19%;
+    }
+    .container{
+        border: 1px solid red;
+        max-height: 14vh;
+        background-color:#320e3b ;
+        color: #10aedb;
+        display: flex;
+    }
+    .text{
+        margin-top: 3%;
+    }
+    .education{
+        height: 10vh;
+        margin: 0px 5px 5px 10px;
+            font-size: 17px;
+    }
+    .studentDetails{
+            height: 40%;
+        margin-top: 5%;
+        text-decoration: none;
+        display: grid;
+    }
+    .student{
+        width: 9vw;
+        height: 7vh;
+        display: flex;
+    }
+    .studentDetails .student > img{
+        width: 9vw;
+        height: 4vh;
+        border-radius: 6px;
+    }
+    h2{
+        color: white;
+        font-size: 10px;
+        font-weight: 300;
+        margin-left: 2%;
+    }
+    h2 > a{
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .Date{
+        font-size: 10px;
+    }
+    .main{
+            display: flex;
+        background-color: whitesmoke;
+    }
+
+    .readDetails{
+        display: grid;
+        margin-top: 2%;
+        margin-left: 15%;
+    }
+    .readDetailsDiv{
+        display: flex;
+    }
+    .readDetailsDiv .eduButton{
+        background-color: #a0d0f2;
+        font-weight: 700;
+        font-size: 7px;
+        color: #10aedb;
+        border:hidden;
+        border-radius: 6px;
+        height: 2vh;
+        width: 10vw;
+    }
+    .readTime{
+        font-size: 8px;
+        margin-left: 1%;
+    }
+    .mainContent{
+        margin-top: 2%;
+    }
+    .mainContent .covidText{
+        margin-top: 3%;
+        font-size: 15px;
+    }
+    .mainContent > img{
+        border-radius: 8px;
+        width: 50vw;
+        height: 20vh;
+    }
+    .categories{
+        margin-top: 2%;
+        margin-right: 15%;
+    }
+    table th{
+        font-size: 15px;
+
+    }
+    .catItems{
+        height: 2.7vh;
+        display: flex;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .catItemsText{
+        margin-left: 15%;
+    }
+    .footer{
+            max-height: 100%;
+        display: block;
+        margin-top: 10%;
+        margin-bottom: 3%;
+    }
+    .footer .subscribeInfo{
+            width: 70%;
+        height: 100%;
+        margin-left: 4%;
+    }
+    .newsletter{
+        height: 100%;
+    }
+    .subscribeNewsletter{
+        font-size: 30px;
+        font-weight: bold;
+        color: darkblue;
+    }
+    .subscribeInfoText{
+        font-size: 15px;
+        margin-top: 10%;
+        color: rgb(79, 77, 77);
+    }
+    .subscribeDetails{
+        display: block;
+        margin-top: 2%;
+    }
+    .subscribeInput{
+        border-style: ridge;
+        height: 5vh;
+        width: 15rem;
+        border-radius: 3px;
+    }
+    .subscribeInfo input::placeholder{
+        font-size: 10px;
+        padding: 3px;
+    }
+    .subscribeButton{
+        width: 50%;
+        color: #febc80;
+        background-color: #063455;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    .subscribeimg{
+            margin-top: 5%;
+        margin-left: 20%;
+        width: 100%;
+    }
+    .subscribeimg >img{
+    height: 15vh;
+    width: 50%;
+    }
+}
