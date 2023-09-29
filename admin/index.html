@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campulse - Admin</title>
+	<link rel="stylesheet" href="output.css">
+	<script type="text/javascript" src="../tailwind.config.js"></script>
+	<script src="https://kit.fontawesome.com/b709b6ab05.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans">
+    <div class="grid">
+
+        <nav class="flex justify-between pr-16 bg-[#FEBC80] pl-16 items-center bg-[rgba(237, 245, 250, 1)] p-4">
+            <div class="flex justify-between items-center">
+          <img src="../images/4logo/navyblue.png" alt="" class="mr-16">
+          <form action="#" method="GET" class="hidden lg:block lg:pl-2">
+            <label for="topbar-search" class="sr-only">Search</label>
+            <div class="relative mt-1 lg:w-96">
+                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+            </div>
+            <input type="text" name="text" id="topbar-search" class="border text-gray-900 sm:text-sm block w-full pl-10 p-2.5 border-[#063455] rounded-lg bg-[#FFDCC0]" placeholder="Search">
+            </div>
+          </form>
+        </div>
+        <!-- Modal toggle -->
+        <button data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block bg-[#063455] text-[#FEBC80] hover:bg-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button">
+          Write Post
+        </button>
+      <!-- Main modal -->
+      <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+          <div class="relative w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              <!-- Modal header -->
+              <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-xl font-semibold justify-items-center text-align-center text-gray-900 dark:text-white">
+                Write a Post
+              </h3>
+            
+              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-6 space-y-6">
+                <div>
+                    <input type="name" name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Your Full Name" required>
+              </div>
+              <div>
+                <input type="title" name="title" id="title" placeholder="Title of your post" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+              </div>
+              <div>
+                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>Choose a country</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                </select>
+              </div>
+              <div class="flex justify-between gap-2">
+                <div class="flex items-start ">
+      
+                                   <input class="block w-full mb-5 text-xs text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 " id="file" type="file">
+                  <div class="flex items-center  w-full mb-5 text-xs text-gray-900 border border-gray-300 rounded-lg">
+                    <select id="Category" class="bg-[#FEBC80] border font-medium border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "placeholder:Select an option>
+                    <option selected >Select Category</option>
+                    <option value=" " >All</option>
+                    <option value=" ">Music</option>
+                    <option value=" ">Poem</option>
+                    <option value=" ">Religion</option>
+                    <option value=" ">Education</option>
+                    <option value="">Gossip</option>
+                    <option value=" ">AFIT</option>
+                </select>
+            </div>
+                </div>
+              </div>
+              <div>											
+                  <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                  <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-[#FEBC80] focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="What do you want to talk about?"></textarea>
+              </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="defaultModal" type="button" class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Teal</button>
+                <button data-modal-hide="defaultModal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+            </div>
+        </div>
+        </div>
+      </div>
+
+    </nav>
+    <div class="bg-[#063455] flex justify-between px-20 py-2 items-center text-[#FEBC80]">
+        <span>2 Posts awaits approval</span>
+        <button class="border-b border-[#FEBC80] p-1 pb-0">View Post</button>
+    </div>
+</div>
+<div class="bg-[#FFE3CE] h-100vh bg-[url('../images/mainbg.png')] bg-cover bg-no-repeat pt-16">
+ <div>
+     <div class="grid justify-center items-center pt-28 pb-96">
+       <div>
+         <p class="text-center text-[#063455] text-5xl font-bold">Get the Latest News Happenings<br>Delivered to Your Inbox</p>
+       </div>
+       <br>
+       <div>
+         <p class="text-center text-zinc-500 text-xl font-medium">Your go-to source for all things youth culture, lifestyle, and education.<br>Subscribe now to stay in the know!</p>
+       </div>
+       <div class="flex mt-6 justify-center">
+         <input type="email" class="w-full outline-none rounded-l-lg bg-[#FFEADB] border border-[#063455]" placeholder="Enter your email address">
+         <button type="button" class="outline-none px-4 bg-[#063455] rounded-r-lg text-[#FEBC80]">Subscribe</button>
+       </div>
+     </div>
+   </div>
+ </div><div class="flex items-center mt-48">
+    <div class="grid p-28">
+      <div class="grid">
+        <div class="flex text-xl text-center items-center p-6 pb-2">
+          <div class="border border-[#757779] rounded-lg p-2">
+          <img src="../images/religion.svg" alt="">
+        </div>
+        <div class="p-2 font-semibold text-[#444749]">
+          <span>Religion</span>
+        </div>
+      </div>
+      <div class="flex p-6 pt-2">
+        <div class="grid mr-16">
+          <img src="../images/religion-laptop.png" alt="">
+          <p class="flex items-center m-6 mr-0 ml-0">
+            <span class="p-2 text-xl text-[#444749] font-semibold border-r">Savanna Nguyen</span>
+            <span class="p-2 text-sm text-[#A9ABAD]">22 Oct, 2020</span>
+          </p>
+          <p class="font-semibold text-2xl text-[#063455] p-2">Education Sector in Nigeria Faces Challenges Amidst<br>COVID-19 Pandemic</p>
+        </div>
+        <div class="grid mr-16 lg:block md:block sm:hidden">
+          <img src="../images/religion-crystal.png" alt="">
+          <p class="flex items-center m-6 mr-0 ml-0">
+            <span class="p-2 text-xl text-[#444749] font-semibold border-r">Savanna Nguyen</span>
+            <span class="p-2 text-sm text-[#A9ABAD]">22 Oct, 2020</span>
+          </p>
+          <p class="font-semibold text-2xl text-[#063455] p-2">Education Sector in Nigeria Faces Challenges Amidst<br>COVID-19 Pandemic</p>
+        </div>
+        <div class="grid mr-16 lg:block md:hidden sm:hidden">
+          <img src="../images/religion-lights.png" alt="">
+          <p class="flex items-center m-6 mr-0 ml-0">
+            <span class="p-2 text-xl text-[#444749] font-semibold border-r">Savanna Nguyen</span>
+            <span class="p-2 text-sm text-[#A9ABAD]">22 Oct, 2020</span>
+          </p>
+          <p class="font-semibold text-2xl text-[#063455] p-2">Education Sector in Nigeria Faces Challenges Amidst<br>COVID-19 Pandemic</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid mt-8">
+      <div class="flex text-xl text-center items-center p-6 pb-2">
+        <div class="border border-[#757779] rounded-lg p-2">
+        <img src="../images/education.svg" alt="">
+      </div>
+      <div class="p-2 font-semibold text-[#444749]">
+        <span>Education</span>
+      </div>
+    </div>
+    <div class="flex p-6 pt-2">
+      <div class="grid mr-16">
+        <img src="../images/religion-laptop.png" alt="">
+        <p class="flex items-center m-6 mr-0 ml-0">
+          <span class="p-2 text-xl text-[#444749] font-semibold border-r">Savanna Nguyen</span>
+          <span class="p-2 text-sm text-[#A9ABAD]">22 Oct, 2020</span>
+        </p>
+        <p class="font-semibold text-2xl text-[#063455] p-2">Education Sector in Nigeria Faces Challenges Amidst<br>COVID-19 Pandemic</p>
+      </div>
+      <div class="grid mr-16 lg:block md:block sm:hidden">
+        <img src="../images/religion-crystal.png" alt="">
+        <p class="flex items-center m-6 mr-0 ml-0">
+          <span class="p-2 text-xl text-[#444749] font-semibold border-r">Savanna Nguyen</span>
+          <span class="p-2 text-sm text-[#A9ABAD]">22 Oct, 2020</span>
+        </p>
+        <p class="font-semibold text-2xl text-[#063455] p-2">Education Sector in Nigeria Faces Challenges Amidst<br>COVID-19 Pandemic</p>
+      </div>
+      <div class="grid mr-16 lg:block md:hidden sm:hidden">
+        <img src="../images/religion-lights.png" alt="">
+        <p class="flex items-center m-6 mr-0 ml-0">
+          <span class="p-2 text-xl text-[#444749] font-semibold border-r">Savanna Nguyen</span>
+          <span class="p-2 text-sm text-[#A9ABAD]">22 Oct, 2020</span>
+        </p>
+        <p class="font-semibold text-2xl text-[#063455] p-2">Education Sector in Nigeria Faces Challenges Amidst<br>COVID-19 Pandemic</p>
+      </div>
+    </div>
+  </div>
+  <div class="grid mt-8">
+    <div class="flex text-xl text-center items-center p-6 pb-2">
+      <div class="border border-[#757779] rounded-lg p-2">
+      <img src="../images/gossip.svg" alt="">
+    </div>
+    <div class="p-2 font-semibold text-[#444749]">
+      <span>Gossip</span>
+    </div>
+  </div>
+  <div class="flex p-6 pt-2">
+    <div class="grid mr-16">
+      <img src="../images/religion-laptop.png" alt="">
+      <p class="flex items-center m-6 mr-0 ml-0">
+        <span class="p-2 text-xl text-[#444749] font-semibold border-r">Savanna Nguyen</span>
+        <span class="p-2 text-sm text-[#A9ABAD]">22 Oct, 2020</span>
+      </p>
+      <p class="font-semibold text-2xl text-[#063455] p-2">Education Sector in Nigeria Faces Challenges Amidst<br>COVID-19 Pandemic</p>
+    </div>
+    <div class="grid mr-16 lg:block md:block sm:hidden">
+      <img src="../images/religion-crystal.png" alt="">
+      <p class="flex items-center m-6 mr-0 ml-0">
+        <span class="p-2 text-xl text-[#444749] font-semibold border-r">Savanna Nguyen</span>
+        <span class="p-2 text-sm text-[#A9ABAD]">22 Oct, 2020</span>
+      </p>
+      <p class="font-semibold text-2xl text-[#063455] p-2">Education Sector in Nigeria Faces Challenges Amidst<br>COVID-19 Pandemic</p>
+    </div>
+    <div class="grid mr-16 lg:block md:hidden sm:hidden">
+      <img src="../images/religion-lights.png" alt="">
+      <p class="flex items-center m-6 mr-0 ml-0">
+        <span class="p-2 text-xl text-[#444749] font-semibold border-r">Savanna Nguyen</span>
+        <span class="p-2 text-sm text-[#A9ABAD]">22 Oct, 2020</span>
+      </p>
+      <p class="font-semibold text-2xl text-[#063455] p-2">Education Sector in Nigeria Faces Challenges Amidst<br>COVID-19 Pandemic</p>
+    </div>
+  </div>
+</div>
+  </div>
+    <div>
+      <img src="../images/spark.png" alt="">
+    </div>
+  </div>
+  <footer>
+    <div class="lg:flex md:flex sm:grid p-24 justify-between items-center pb-4 pt-12 bg-[#FEBC80]">
+      <div class="m-12 grid">
+        <p class="font-bold text-6xl mb-8 text-[#063455] font-Arial">Subscribe to our newsletter</p>
+        <div class="m-12 sm:block lg:hidden md:hidden">
+          <img src="../images/man-working.png" alt="">
+        </div>
+        <p class="text-xl text-[#063455] font-semibold">stay up-to-date on all things youth culture, lifestyle, and<br>education.Get the latest news, tips, and resources delivered<br>straight to your inbox. Join our community and stay ahead of<br>the game!</p>
+        <div class="flex mt-16 justify-center">
+          <input type="email" name="" id="" class="border border-[#063455] p-3 w-full bg-[#FFEADB] rounded-l-lg" placeholder="  Enter your Email Address">
+          <button type="button" class="border border-[#063455] p-2 px-8 bg-[#063455] text-[#FEBC80] rounded-r-lg">Subscribe</button>
+        </div>
+      </div>
+      <div class="m-12 sm:hidden lg:block md:block">
+        <img src="../images/man-working.png" alt="">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
